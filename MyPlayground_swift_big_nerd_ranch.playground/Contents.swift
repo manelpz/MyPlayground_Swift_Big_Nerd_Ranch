@@ -66,8 +66,6 @@ for _ in 1...5 {
     print(myVar)
 }
 
-*/
-
 
 //same
 for i in 1...100{
@@ -80,4 +78,17 @@ for case let i in 1...100 where i % 3 == 0 {
     print(i)
 }
 
+//repeat-while
+var shields: Int = 0
+repeat{
+    print ("DO while")
+}while shields > 0
+*/
+
+// for string
+
+var text = "abcdefgh"
+for c: Character in text {
+    print (c)
+}
 
