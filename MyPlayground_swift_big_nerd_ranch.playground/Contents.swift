@@ -83,7 +83,7 @@ var shields: Int = 0
 repeat{
     print ("DO while")
 }while shields > 0
-*/
+
 
 // for string
 
@@ -91,4 +91,51 @@ var text = "abcdefgh"
 for c: Character in text {
     print (c)
 }
+
+
+
+// optional
+// optionals just have two posible values; nil or value
+// no optinal var isnt possible
+
+var errorCodeString: String? // nil
+
+errorCodeString = "404"
+//print (errorCodeString)
+
+if errorCodeString != nil{
+    let theError = errorCodeString! //forced unwrapping
+    print (theError)
+}
+
+
+//optional binding
+//pattern check if optional contains value
+
+
+var errorCodeString: String?
+errorCodeString = "404"
+
+if  let errorCode = errorCodeString{
+    //print(errorCode)
+    if let errorCodeInt = Int(errorCode){
+        print("\(errorCode):  \(errorCodeInt)")
+    }
+}
+*/
+
+//unwrapping multiple optional
+
+var errorCodeString: String?
+errorCodeString = "404"
+if let theError = errorCodeString, let errorCodeInteger = Int(theError){
+    print ("\(theError) : \(errorCodeInteger)")
+}
+
+
+
+
+
+
+
 
