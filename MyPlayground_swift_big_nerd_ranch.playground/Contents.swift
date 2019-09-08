@@ -1,5 +1,5 @@
 import UIKit
-
+/*
 var population: Int = 5422
 var message: String
 var hasPostOffice: Bool = true
@@ -57,6 +57,27 @@ let age = 24
 if case 18...25 = age, age >= 21
 {
     print("drinking age")
+}
+
+
+var myVar: Int = 0
+for _ in 1...5 {
+    myVar += 1
+    print(myVar)
+}
+
+*/
+
+
+//same
+for i in 1...100{
+    if i % 3 == 0 {
+        print(i)
+    }
+}
+
+for case let i in 1...100 where i % 3 == 0 {
+    print(i)
 }
 
 
