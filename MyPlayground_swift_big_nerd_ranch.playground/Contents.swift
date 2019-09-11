@@ -43,7 +43,7 @@ default:
     errorString += "something"
 }
 
-
+ 
 //tuplas
 
 let error = (code: statusCode, error:errorString)
@@ -51,7 +51,7 @@ let error = (code: statusCode, error:errorString)
 error.code
 error.error
 
-//if-case
+ //if-case
 
 let age = 24
 if case 18...25 = age, age >= 21
@@ -110,8 +110,8 @@ if errorCodeString != nil{
 
 
 //optional binding
-//pattern check if optional contains value
 
+    //pattern check if optional contains value
 
 var errorCodeString: String?
 errorCodeString = "404"
@@ -119,22 +119,28 @@ errorCodeString = "404"
 if  let errorCode = errorCodeString{
     //print(errorCode)
     if let errorCodeInt = Int(errorCode){
-        print("\(errorCode):  \(errorCodeInt)")
-    }
-}
-*/
-
+        print("\(errorCode):
+ 
 //unwrapping multiple optional
-
-var errorCodeString: String?
+ 
+ var errorCodeString: String?
 errorCodeString = "404"
+
 if let theError = errorCodeString, let errorCodeInteger = Int(theError){
     print ("\(theError) : \(errorCodeInteger)")
 }
+*/
 
 
+//Optional binding with where
 
+var errorCodeString1: String?
+errorCodeString1 = "404"
 
+if let theError = errorCodeString1, let errorCodeInteger = Int(theError),
+     errorCodeInteger == 404 {
+     print ("\(theError) : \(errorCodeInteger)")
+}
 
 
 
