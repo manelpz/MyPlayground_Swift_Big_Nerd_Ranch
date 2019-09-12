@@ -129,7 +129,7 @@ errorCodeString = "404"
 if let theError = errorCodeString, let errorCodeInteger = Int(theError){
     print ("\(theError) : \(errorCodeInteger)")
 }
-*/
+
 
 
 //Optional binding with where
@@ -142,6 +142,13 @@ if let theError = errorCodeString1, let errorCodeInteger = Int(theError),
      print ("\(theError) : \(errorCodeInteger)")
 }
 
+*/
 
+//nil coalescing operator
 
-
+let description: String
+if let errorDescription = kCFErrorDescriptio{
+    descriptin = errorDescription
+}else{
+    description = "no error"
+}
