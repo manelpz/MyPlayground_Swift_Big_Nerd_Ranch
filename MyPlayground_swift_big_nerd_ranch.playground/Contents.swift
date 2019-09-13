@@ -142,7 +142,12 @@ if let theError = errorCodeString1, let errorCodeInteger = Int(theError),
      print ("\(theError) : \(errorCodeInteger)")
 }
 
-*/
+
+ //modify an optional in place
+ // adding optional who evaluate and if value exist add a string
+ 
+ upCaseErrorDescription?.appendContentsof("PLEASE TRY AGAIN")
+
 
 //nil coalescing operator
 
@@ -152,3 +157,8 @@ if let errorDescription = kCFErrorDescriptio{
 }else{
     description = "no error"
 }
+*/
+
+
+// asignar un valor a un Optional
+let description = errorDescription ?? "No error"
