@@ -192,7 +192,7 @@ bucketList += newItem
 
 bucketList.insert("new text", at:2 )
 
-*/
+
 
 // Dictionary
 
@@ -206,7 +206,7 @@ var dict4 = [String:Double]()
 var movieRatings = ["donnie darko": 1, "chung express": 2, "dark city": 3]
 let darkoRating = movieRatings["donnie darko"]
 movieRatings["dark city"] = 5
-movieRatings
+movieRatings*/
 //print("I have rated \(dictionary5.count) movies")
 
 //return value Optonal
