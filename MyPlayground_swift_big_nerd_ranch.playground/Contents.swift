@@ -220,3 +220,13 @@ movieRatings
 if let lastRating = oldrating, let currentRating = movieRatings["donnie darko"]{
     print("old rating: \(lastRating); current rating: \(currentRating)")
 }
+
+movieRatings
+
+movieRatings["new value"] = 5
+
+movieRatings
+
+movieRatings.removeValue(forKey: "new value")
+
+movieRatings
