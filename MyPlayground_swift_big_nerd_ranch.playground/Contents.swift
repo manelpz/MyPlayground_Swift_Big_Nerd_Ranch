@@ -230,3 +230,16 @@ movieRatings
 movieRatings.removeValue(forKey: "new value")
 
 movieRatings
+
+
+//looping dictionary
+
+for (key, value) in movieRatings
+{
+    print("the key \(key) was a value \(value)")
+}
+
+
+//immutable dictionary
+
+let MovieRatingImmutable = ["donnie darko":4, "chungkung":5, "dark city":4]
