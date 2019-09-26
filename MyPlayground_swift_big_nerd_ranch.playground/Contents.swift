@@ -243,3 +243,12 @@ for (key, value) in movieRatings
 //immutable dictionary
 
 let MovieRatingImmutable = ["donnie darko":4, "chungkung":5, "dark city":4]
+
+
+
+//Translating a Dictionary to an Array
+
+
+let watchedMovies = Array(MovieRatingImmutable.keys)
+
+watchedMovies
