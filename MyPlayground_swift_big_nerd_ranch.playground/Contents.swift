@@ -147,7 +147,7 @@ import UIKit
  // adding optional who evaluate and if value exist add a string
  
  upCaseErrorDescription?.appendContentsof("PLEASE TRY AGAIN")
- */
+ 
  
  //nil coalescing operator
  
@@ -206,10 +206,17 @@ var dict4 = [String:Double]()
 var movieRatings = ["donnie darko": 1, "chung express": 2, "dark city": 3]
 let darkoRating = movieRatings["donnie darko"]
 movieRatings["dark city"] = 5
-movieRatings*/
-//print("I have rated \(dictionary5.count) movies")
+movieRatings
+print("I have rated \(dictionary5.count) movies")
+*/
 
-//return value Optonal
 
-//updateValue(_:forKey:)
+//update dictionary
 
+var movieRatings = ["donnie darko":4, "chungkung":5, "dark city":4]
+let oldrating: Int? = movieRatings.updateValue(666, forKey: "donnie darko")
+
+movieRatings
+if let lastRating = oldrating, let currentRating = movieRatings["donnie darko"]{
+    print("old rating: \(lastRating); current rating: \(currentRating)")
+}
