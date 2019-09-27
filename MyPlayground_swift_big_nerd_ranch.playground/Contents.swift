@@ -208,7 +208,6 @@ let darkoRating = movieRatings["donnie darko"]
 movieRatings["dark city"] = 5
 movieRatings
 print("I have rated \(dictionary5.count) movies")
-*/
 
 
 //update dictionary
@@ -252,3 +251,20 @@ let MovieRatingImmutable = ["donnie darko":4, "chungkung":5, "dark city":4]
 let watchedMovies = Array(MovieRatingImmutable.keys)
 
 watchedMovies
+*/
+//Getting a Set
+//like dictionary but wihtout key and not repitable
+
+var groceryBag = Set<String>()
+//or
+var groceryBag2 = Set (["apple", "Orange", "banana"])
+groceryBag.insert("apple")
+groceryBag.insert("Orange")
+groceryBag.insert("banana")
+
+
+for food in groceryBag{
+    print(food)
+}
+
+let hasBananas = groceryBag2.contains("babana")
