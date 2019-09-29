@@ -262,17 +262,25 @@ groceryBag.insert("apple")
 groceryBag.insert("Orange")
 groceryBag.insert("banana")
 
-
+/*
 for food in groceryBag{
     print(food)
-}
+}*/
 
-let hasBananas = groceryBag2.contains("babana")
+groceryBag
+//let hasBananas = groceryBag2.contains("babana")
 
 //Unions
 
-let friendsGroceryBag = Set(["baban","Cereal", "Milk"])
+let friendsGroceryBag = Set(["uno","dos", "tres"])
 let commonGroceryBag = groceryBag.union(friendsGroceryBag)
 
 
+//Intersects
+
+let roomatesGroceryBag = Set (["apple","bananas", "Cereal", "Toothpaste"])
+let itemsToReturn = commonGroceryBag.intersection(roomatesGroceryBag)
+
+roomatesGroceryBag
 commonGroceryBag
+itemsToReturn
