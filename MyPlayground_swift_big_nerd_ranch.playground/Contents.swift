@@ -251,10 +251,10 @@ let MovieRatingImmutable = ["donnie darko":4, "chungkung":5, "dark city":4]
 let watchedMovies = Array(MovieRatingImmutable.keys)
 
 watchedMovies
-*/
+
 //Getting a Set
 //like dictionary but wihtout key and not repitable
-
+*/
 var groceryBag = Set<String>()
 //or
 var groceryBag2 = Set (["apple", "Orange", "banana"])
@@ -268,3 +268,11 @@ for food in groceryBag{
 }
 
 let hasBananas = groceryBag2.contains("babana")
+
+//Unions
+
+let friendsGroceryBag = Set(["baban","Cereal", "Milk"])
+let commonGroceryBag = groceryBag.union(friendsGroceryBag)
+
+
+commonGroceryBag
