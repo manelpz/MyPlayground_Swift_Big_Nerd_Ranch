@@ -277,10 +277,19 @@ let commonGroceryBag = groceryBag.union(friendsGroceryBag)
 
 
 //Intersects
-
+/*
 let roomatesGroceryBag = Set (["apple","bananas", "Cereal", "Toothpaste"])
 let itemsToReturn = commonGroceryBag.intersection(roomatesGroceryBag)
 
 roomatesGroceryBag
 commonGroceryBag
 itemsToReturn
+
+*/
+//Disjoin
+
+let yourSeconBag =  Set(["berries","Yogurt"])
+let roomatesSecondBag = Set(["grapes", "honey"])
+let disjoint = yourSeconBag.isDisjoint(with: roomatesSecondBag)
+yourSeconBag
+disjoint
