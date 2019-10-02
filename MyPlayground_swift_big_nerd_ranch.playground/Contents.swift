@@ -293,3 +293,32 @@ let roomatesSecondBag = Set(["grapes", "honey"])
 let disjoint = yourSeconBag.isDisjoint(with: roomatesSecondBag)
 yourSeconBag
 disjoint
+
+
+//Funtions
+
+func printPersonalGreetings(name: String){
+    print("hello \(name), welcome to your playground.")
+}
+
+printPersonalGreetings(name: "matt")
+
+
+func divisionDescription(num: Double, den:Double){
+    print("\(num) divided by \(den) equals \(num/den)")
+}
+
+divisionDescription(num: 9.0, den: 3.0)
+
+//using explicit parameter names
+
+func divisionDescription2 (forNumerator num: Double, andDenominator den: Double){
+    print("\(num) divided by \(den) equals \(num/den)")
+}
+
+divisionDescription2(forNumerator: 9.0, andDenominator: 8.0)
+
+
+//Variadic parameters
+
+
