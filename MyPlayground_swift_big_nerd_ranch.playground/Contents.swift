@@ -294,7 +294,7 @@ let disjoint = yourSeconBag.isDisjoint(with: roomatesSecondBag)
 yourSeconBag
 disjoint
 
-
+/*
 //Funtions
 
 func printPersonalGreetings(name: String){
@@ -317,8 +317,18 @@ func divisionDescription2 (forNumerator num: Double, andDenominator den: Double)
 }
 
 divisionDescription2(forNumerator: 9.0, andDenominator: 8.0)
-
+*/
 
 //Variadic parameters
 
+
+func printPersonalGreetings(names: String...){
+    for name in names{
+        print("Hello \(name), welcome to the playground.")
+    }
+}
+
+printPersonalGreetings(names: "alex", "chris", "drew", "pat")
+
+//printPersonalGreetings("alex" ,"uno")
 
