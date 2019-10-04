@@ -332,3 +332,17 @@ printPersonalGreetings(names: "alex", "chris", "drew", "pat")
 
 //printPersonalGreetings("alex" ,"uno")
 
+
+
+//Default parameters values
+
+func divisionDescription(forNumerador num: Double,
+                         andDenominator den: Double,
+                         withPunctuaction punctuation: String = "."){
+    
+    
+    print ("\(num) divided by \(den) equals \(num/den)\(punctuation)")
+}
+
+divisionDescription(forNumerador: 9.0, andDenominator: 3.0)
+divisionDescription(forNumerador: 2.0, andDenominator: 3.0, withPunctuaction: ":")
