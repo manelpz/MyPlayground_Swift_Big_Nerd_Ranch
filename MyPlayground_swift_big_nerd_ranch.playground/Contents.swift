@@ -321,7 +321,7 @@ divisionDescription2(forNumerator: 9.0, andDenominator: 8.0)
 
 //Variadic parameters
 
-
+/*
 func printPersonalGreetings(names: String...){
     for name in names{
         print("Hello \(name), welcome to the playground.")
@@ -329,13 +329,13 @@ func printPersonalGreetings(names: String...){
 }
 
 printPersonalGreetings(names: "alex", "chris", "drew", "pat")
-
+*/
 //printPersonalGreetings("alex" ,"uno")
 
 
 
 //Default parameters values
-
+/*
 func divisionDescription(forNumerador num: Double,
                          andDenominator den: Double,
                          withPunctuaction punctuation: String = "."){
@@ -346,3 +346,21 @@ func divisionDescription(forNumerador num: Double,
 
 divisionDescription(forNumerador: 9.0, andDenominator: 3.0)
 divisionDescription(forNumerador: 2.0, andDenominator: 3.0, withPunctuaction: ":")
+*/
+
+
+//In-out parameters
+
+
+var error = "The request failed:"
+error
+func appendErrorCode(code: Int, toErrorString errorString: inout String){
+    if code == 400
+    {
+        errorString += " bad request"
+    }
+}
+
+appendErrorCode(code: 400, toErrorString: &error)
+
+error
