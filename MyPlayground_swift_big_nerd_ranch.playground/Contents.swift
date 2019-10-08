@@ -350,7 +350,7 @@ divisionDescription(forNumerador: 2.0, andDenominator: 3.0, withPunctuaction: ":
 
 
 //In-out parameters
-
+/*
 
 var error = "The request failed:"
 error
@@ -363,4 +363,19 @@ func appendErrorCode(code: Int, toErrorString errorString: inout String){
 
 appendErrorCode(code: 400, toErrorString: &error)
 
-error
+error*/
+
+
+//Nested Functions and scope
+
+
+func areaToTriangle(withBase base: Double, andHeight height: Double) -> Double{
+    let numerator = base * height
+    
+    func divide() -> Double {
+        return numerator / 2
+    }
+    return divide()
+}
+
+areaToTriangle(withBase: 3.0, andHeight: 5.0)
