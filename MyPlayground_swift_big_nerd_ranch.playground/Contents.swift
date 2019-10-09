@@ -396,3 +396,8 @@ func sortEvenOdd(numbers: [Int]) -> (events: [Int], odds: [Int]){
     }
     return (evens, odds)
 }
+
+
+let aBuchOfNumbers = [10, 1, 4, 57, 43, 84]
+let theSortedNumbers = sortEvenOdd(numbers: aBuchOfNumbers)
+print("the even are: \(theSortedNumbers.events) and the odd numbers: \(theSortedNumbers.odds)")
