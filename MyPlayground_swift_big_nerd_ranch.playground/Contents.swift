@@ -368,7 +368,7 @@ error*/
 
 //Nested Functions and scope
 
-
+/*
 func areaToTriangle(withBase base: Double, andHeight height: Double) -> Double{
     let numerator = base * height
     
@@ -379,3 +379,20 @@ func areaToTriangle(withBase base: Double, andHeight height: Double) -> Double{
 }
 
 areaToTriangle(withBase: 3.0, andHeight: 5.0)
+*/
+
+//Multiple Returns
+//return tupla
+func sortEvenOdd(numbers: [Int]) -> (events: [Int], odds: [Int]){
+    var evens = [Int]()
+    var odds = [Int]()
+    
+    for number in numbers {
+        if number % 2 == 0{
+      evens.append(number)
+    }else{
+        odds.append(number)
+    }
+    }
+    return (evens, odds)
+}
