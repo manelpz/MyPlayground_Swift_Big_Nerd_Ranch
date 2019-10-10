@@ -383,6 +383,7 @@ areaToTriangle(withBase: 3.0, andHeight: 5.0)
 
 //Multiple Returns
 //return tupla
+/*
 func sortEvenOdd(numbers: [Int]) -> (events: [Int], odds: [Int]){
     var evens = [Int]()
     var odds = [Int]()
@@ -401,3 +402,24 @@ func sortEvenOdd(numbers: [Int]) -> (events: [Int], odds: [Int]){
 let aBuchOfNumbers = [10, 1, 4, 57, 43, 84]
 let theSortedNumbers = sortEvenOdd(numbers: aBuchOfNumbers)
 print("the even are: \(theSortedNumbers.events) and the odd numbers: \(theSortedNumbers.odds)")
+*/
+
+
+//Optional Return types
+
+func grabMiddleName (name: (String, String?, String)) -> String? {
+    return name.1
+}
+
+var middleName = grabMiddleName(name: ("matt", "jose", "jeft"))
+
+if let theName =  middleName{
+    print(theName)
+}
+
+
+ middleName = grabMiddleName(name: ("matt", nil, "jeft"))
+
+if let theName =  middleName{
+    print(theName)
+}
