@@ -406,7 +406,7 @@ print("the even are: \(theSortedNumbers.events) and the odd numbers: \(theSorted
 
 
 //Optional Return types
-
+/*
 func grabMiddleName (name: (String, String?, String)) -> String? {
     return name.1
 }
@@ -423,3 +423,16 @@ if let theName =  middleName{
 if let theName =  middleName{
     print(theName)
 }
+*/
+
+
+//Ealy exits with guard statements
+
+func greenByMiddleName(name:(first: String, middle: String?, last: String)){
+    guard let middleName = name.middle else{
+        print("hey there")
+        return
+    }
+    print("hey \(middleName)")
+}
+greenByMiddleName(name: ("Matt", nil, "Mathias"))
