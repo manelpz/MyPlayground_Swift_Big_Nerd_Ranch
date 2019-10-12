@@ -436,3 +436,10 @@ func greenByMiddleName(name:(first: String, middle: String?, last: String)){
     print("hey \(middleName)")
 }
 greenByMiddleName(name: ("Matt", nil, "Mathias"))
+
+
+
+//Function Types
+
+let evenOddFunction:([Int]) -> ([Int], [Int]) =  sortEvenOdd
+
