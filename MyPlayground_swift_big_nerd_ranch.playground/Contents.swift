@@ -439,7 +439,11 @@ greenByMiddleName(name: ("Matt", nil, "Mathias"))
 
 
 
-//Function Types
+//Closures
 
-let evenOddFunction:([Int]) -> ([Int], [Int]) =  sortEvenOdd
+var volunteerCounts = [1,3,40,32,2,53]
 
+func sortArray(i:Int, j:Int) -> Bool {
+    return i<j
+}
+let volunteersSorted = volunteerCounts.sorted(by: sortArray)
