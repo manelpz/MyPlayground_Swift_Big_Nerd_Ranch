@@ -427,7 +427,7 @@ if let theName =  middleName{
 
 
 //Ealy exits with guard statements
-
+/*
 func greenByMiddleName(name:(first: String, middle: String?, last: String)){
     guard let middleName = name.middle else{
         print("hey there")
@@ -436,7 +436,7 @@ func greenByMiddleName(name:(first: String, middle: String?, last: String)){
     print("hey \(middleName)")
 }
 greenByMiddleName(name: ("Matt", nil, "Mathias"))
-
+*/
 
 
 //Closures
