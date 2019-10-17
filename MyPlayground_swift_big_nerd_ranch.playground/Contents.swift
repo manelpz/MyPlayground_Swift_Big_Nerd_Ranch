@@ -440,10 +440,28 @@ greenByMiddleName(name: ("Matt", nil, "Mathias"))
 
 
 //Closures
-
+/*
 var volunteerCounts = [1,3,40,32,2,53]
 
 func sortArray(i:Int, j:Int) -> Bool {
     return i<j
 }
 let volunteersSorted = volunteerCounts.sorted(by: sortArray)
+*/
+
+
+//Closure Expression Syntax
+
+/*
+ {(PARAMETERS) -> RETURN TYPE IN
+ code
+ }
+ */
+
+var volunteerCounts = [1,3,40,32,2,53]
+
+let volunteersSorted = volunteerCounts.sort(by: {
+    (i:Int, j:Int) -> Bool in {
+        return i<j
+    }())
+}
