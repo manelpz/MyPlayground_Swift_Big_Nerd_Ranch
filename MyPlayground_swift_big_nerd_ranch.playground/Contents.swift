@@ -457,11 +457,39 @@ let volunteersSorted = volunteerCounts.sorted(by: sortArray)
  code
  }
  */
+/*
+var volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
 
-var volunteerCounts = [1,3,40,32,2,53]
-
-let volunteersSorted = volunteerCounts.sort(by: {
-    (i:Int, j:Int) -> Bool in {
+var volunteersSorted = volunteerCounts.sort(by: {(i:Int, j:Int) -> Bool in
         return i<j
-    }())
+})
+
+print(volunteersSorted)
+*/
+
+/*
+var volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
+
+let volunteerSorted = volunteerCounts.sorted(by: {i, j in i < j})
+*/
+
+//Using shorthand syntax for arguments
+/*var volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
+
+let volunteerSorted = volunteerCounts.sorted(by: {$0 < $1})
+*/
+
+//Functions as Return Types
+
+func makeTownGrands() -> (Int, Int) -> Int {//return a function
+    func buildRoads(lightsToAdd: Int, toLights: Int) -> Int{
+        return toLights + lightsToAdd
+    }
+    return buildRoads
 }
+
+var stoplights = 4
+let townPlan = makeTownGrands()
+stoplights = townPlan(4, stoplights)
+
+print("knowhere has \(stoplights) stoplights.")
