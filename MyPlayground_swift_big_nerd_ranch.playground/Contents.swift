@@ -481,6 +481,7 @@ let volunteerSorted = volunteerCounts.sorted(by: {$0 < $1})
 
 //Functions as Return Types
 
+/*
 func makeTownGrands() -> (Int, Int) -> Int {//return a function
     func buildRoads(lightsToAdd: Int, toLights: Int) -> Int{
         return toLights + lightsToAdd
@@ -492,4 +493,30 @@ var stoplights = 4
 let townPlan = makeTownGrands()
 stoplights = townPlan(4, stoplights)
 
-print("knowhere has \(stoplights) stoplights.")
+print("knowhere has \(stoplights) stoplights.")*/
+
+
+//Functions as Arguments
+
+func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)? {
+    if condition(budget){
+        func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
+            return toLights + lightsToAdd
+        }
+        return buildRoads
+    }else{
+        return nil
+    }
+}
+
+func evaluatedBudget(budget: Int) -> Bool {
+    return budget > 10000
+}
+
+var stoplights = 4
+
+if let townPlan = makeTownGrand(budget: 1000, condition: evaluatedBudget) {
+    stoplights = townPlan(4, stoplights)
+}
+
+print("Knowhere has \(stoplights) stoplights.")
