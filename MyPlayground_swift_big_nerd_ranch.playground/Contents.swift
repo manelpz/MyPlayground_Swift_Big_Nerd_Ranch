@@ -497,7 +497,7 @@ print("knowhere has \(stoplights) stoplights.")*/
 
 
 //Functions as Arguments
-
+/*
 func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)? {
     if condition(budget){
         func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
@@ -520,3 +520,4 @@ if let townPlan = makeTownGrand(budget: 1000, condition: evaluatedBudget) {
 }
 
 print("Knowhere has \(stoplights) stoplights.")
+*/
