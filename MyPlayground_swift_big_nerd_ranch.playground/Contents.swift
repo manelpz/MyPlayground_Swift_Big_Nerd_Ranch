@@ -518,6 +518,12 @@ var stoplights = 4
 if let townPlan = makeTownGrand(budget: 1000, condition: evaluatedBudget) {
     stoplights = townPlan(4, stoplights)
 }
+if let newTownPlan = makeTownGrand(budget: 100, condition: evaluatedBudget){
+    stoplights = newTownPlan(4, stoplights)
+}
 
 print("Knowhere has \(stoplights) stoplights.")
+
+
+
 
