@@ -497,7 +497,7 @@ print("knowhere has \(stoplights) stoplights.")*/
 
 
 //Functions as Arguments
-
+/*
 func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)? {
     if condition(budget){
         func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
@@ -535,5 +535,19 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)?
         return nil
     }
 }
+*/
 
 
+
+//Closures Capture Values
+
+func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
+    var totalGrowth = 0
+    func growthTrackers() -> Int {
+        totalGrowth += growth
+        return totalGrowth
+    }
+    return growthTrackers
+}
+var currentPopulatino =  5422
+let growBy500 = makeGrowthTracker(forGrowth: 500)
