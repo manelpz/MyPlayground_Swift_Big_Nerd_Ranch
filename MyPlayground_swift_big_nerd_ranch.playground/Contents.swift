@@ -551,3 +551,7 @@ func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
 }
 var currentPopulatino =  5422
 let growBy500 = makeGrowthTracker(forGrowth: 500)
+growBy500()
+growBy500()
+growBy500()
+currentPopulatino += growBy500() //currentPopulation is now 7422
