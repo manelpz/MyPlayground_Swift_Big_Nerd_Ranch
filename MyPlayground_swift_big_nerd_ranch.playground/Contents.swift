@@ -513,6 +513,7 @@ func evaluatedBudget(budget: Int) -> Bool {
     return budget > 10000
 }
 
+ */
 var stoplights = 4
 
 if let townPlan = makeTownGrand(budget: 1000, condition: evaluatedBudget) {
@@ -535,7 +536,7 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)?
         return nil
     }
 }
-*/
+
 
 
 
