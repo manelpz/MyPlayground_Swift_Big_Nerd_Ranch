@@ -541,7 +541,7 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)?
 
 
 //Closures Capture Values
-
+/*
 func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     var totalGrowth = 0
     func growthTracker() -> Int {
@@ -558,8 +558,14 @@ growBy500()
 currentPopulation += growBy500() //currentPopulation is now 7422
 let anotherGrowBy500 = growBy500
 anotherGrowBy500() // totalGrowth now equal to 2500
+*/
 
-
+let anotherGrowBy500 = growBy500
+anotherGrowBy500() //totalGrowth now equal to 2500
+var someOtherPopulation = 401234
+let growBy1000 = makeGrowthTracker(forGrowth:10000)
+someOtherPopulation += growBy1000()
+currentPopulation
 
 
 
