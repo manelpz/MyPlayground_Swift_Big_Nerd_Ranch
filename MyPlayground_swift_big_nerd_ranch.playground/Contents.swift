@@ -560,13 +560,6 @@ let anotherGrowBy500 = growBy500
 anotherGrowBy500() // totalGrowth now equal to 2500
 */
 
-let anotherGrowBy500 = growBy500
-anotherGrowBy500() //totalGrowth now equal to 2500
-var someOtherPopulation = 401234
-let growBy1000 = makeGrowthTracker(forGrowth:10000)
-someOtherPopulation += growBy1000()
-currentPopulation
-
 
 //functional programming
 
@@ -576,12 +569,4 @@ let projectedPopulations = precinctPopulations.map{
     return population*2
 }
 projectedPopulations
-
-//Filtering an array
-
-let bigProjections = projectedPopulations.filter{_ in
-    (projection: Int) -> Bool; in
-    return Collection > 4000
-}
-bigProjections
 
