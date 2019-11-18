@@ -514,6 +514,8 @@ func evaluatedBudget(budget: Int) -> Bool {
 }
 
  */
+
+/*
 var stoplights = 4
 
 if let townPlan = makeTownGrand(budget: 1000, condition: evaluatedBudget) {
@@ -524,6 +526,8 @@ if let newTownPlan = makeTownGrand(budget: 100, condition: evaluatedBudget){
 }
 
 print("Knowhere has \(stoplights) stoplights.")
+
+*/
 /*
 
 func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)? {
@@ -540,8 +544,8 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)?
 
 
 
-//Closures Capture Values
-/*
+//closures capture values
+
 func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     var totalGrowth = 0
     func growthTracker() -> Int {
@@ -550,23 +554,21 @@ func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     }
     return growthTracker
 }
-
-var currentPopulation = 5422
+var currentPopulation = 422
 let growBy500 = makeGrowthTracker(forGrowth: 500)
 growBy500()
 growBy500()
-currentPopulation += growBy500() //currentPopulation is now 7422
-let anotherGrowBy500 = growBy500
-anotherGrowBy500() // totalGrowth now equal to 2500
-*/
+growBy500()
+currentPopulation += growBy500()
+
 
 
 //functional programming
-
+/*
 let precinctPopulations = [1244,2021,2157]
 let projectedPopulations = precinctPopulations.map{
     (population: Int)-> Int in
     return population*2
 }
 projectedPopulations
-
+*/
