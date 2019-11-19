@@ -554,7 +554,7 @@ func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     }
     return growthTracker
 }
-var currentPopulation = 422
+var currentPopulation = 5422
 let growBy500 = makeGrowthTracker(forGrowth: 500)
 growBy500()
 growBy500()
@@ -564,11 +564,11 @@ currentPopulation += growBy500()
 
 
 //functional programming
-/*
+
 let precinctPopulations = [1244,2021,2157]
 let projectedPopulations = precinctPopulations.map{
     (population: Int)-> Int in
     return population*2
 }
 projectedPopulations
-*/
+
