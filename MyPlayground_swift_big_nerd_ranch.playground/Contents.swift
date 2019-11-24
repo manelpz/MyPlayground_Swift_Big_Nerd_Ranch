@@ -563,6 +563,11 @@ currentPopulation += growBy500()
 
 
 
+//Closure are reference type
+
+let anothergrowBy500 = growBy500
+anothergrowBy500()
+
 //functional programming
 
 let precinctPopulations = [1244,2021,2157]
