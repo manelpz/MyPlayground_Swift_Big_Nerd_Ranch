@@ -568,12 +568,12 @@ currentPopulation += growBy500()
 let anothergrowBy500 = growBy500
 anothergrowBy500()
 
+
 //functional programming
 /*
-let precinctPopulations = [1244,2021,2157]
-let projectedPopulations = precinctPopulations.map{
-    (population: Int)-> Int in
-    return population*2
-}
-projectedPopulations*/
-
+ let precinctPopulations = [1244,2021,2157]
+ let projectedPopulations = precinctPopulations.map{
+ (population: Int)-> Int in
+ return population*2
+ }
+ projectedPopulations*/
