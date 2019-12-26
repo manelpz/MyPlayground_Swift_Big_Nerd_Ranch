@@ -588,5 +588,18 @@ let projectedPopulations = precinctPopulations.map{
     return population*2
 }
 
+let precinctPopulations = [1244,2021,2157]
+let projectedPopulations = precinctPopulations.map{
+    (population: Int)-> Int in
+    return population*2
+}
+
+
+
+let precinctPopulations = [1244,2021,2157]
+let projectedPopulations = precinctPopulations.map{
+    (population: Int)-> Int in
+    return population*2
+}
 
 
