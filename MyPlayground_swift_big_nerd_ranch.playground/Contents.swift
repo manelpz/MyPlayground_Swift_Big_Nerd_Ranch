@@ -568,7 +568,10 @@ currentPopulation += growBy500()
 let anothergrowBy500 = growBy500
 anothergrowBy500()
 
+//Closure are reference type
 
+let anothergrowBy500 = growBy500
+anothergrowBy500()
 
 //functional programming
 
