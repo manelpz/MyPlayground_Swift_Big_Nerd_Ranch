@@ -528,7 +528,6 @@ if let newTownPlan = makeTownGrand(budget: 100, condition: evaluatedBudget){
 print("Knowhere has \(stoplights) stoplights.")
 
 */
-/*
 
 func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)? {
     if condition(budget){
@@ -539,7 +538,7 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)?
     }else{
         return nil
     }
-}*/
+}
 
 
 
