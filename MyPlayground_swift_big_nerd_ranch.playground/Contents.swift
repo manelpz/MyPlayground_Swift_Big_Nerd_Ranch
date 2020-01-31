@@ -544,7 +544,7 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)?
 
 
 //closures capture values
-/*
+
 func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     var totalGrowth = 0
     func growthTracker() -> Int {
@@ -559,7 +559,7 @@ growBy500()
 growBy500()
 growBy500()
 currentPopulation += growBy500()
-*/
+
 
 
 //Closure are reference type
