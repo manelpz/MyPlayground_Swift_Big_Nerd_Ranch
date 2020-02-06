@@ -581,17 +581,9 @@ growBy500()
 currentPopulation += growBy500()
 
 
-func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
-    var totalGrowth = 0
-    func growthTracker() -> Int {
-        totalGrowth += growth
-        return totalGrowth
-    }
-    return growthTracker
-}
-var currentPopulation = 5422
-let growBy500 = makeGrowthTracker(forGrowth: 500)
-growBy500()
-growBy500()
-growBy500()
-currentPopulation += growBy500()
+//Another population to track
+
+var someOtherPupulation = 4000000
+let growBy1000 = makeGrowthTracker(forGrowth: 1000)
+someOtherPupulation += growBy1000()
+currentPopulation
