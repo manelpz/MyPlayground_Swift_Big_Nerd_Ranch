@@ -588,22 +588,3 @@ let growBy1000 = makeGrowthTracker(forGrowth: 1000)
 someOtherPupulation += growBy1000()
 currentPopulation
 
-
-var someOtherPupulation = 4000000
-let growBy1000 = makeGrowthTracker(forGrowth: 1000)
-someOtherPupulation += growBy1000()
-currentPopulation
-
-
-
-var someOtherPupulation = 4000000
-let growBy1000 = makeGrowthTracker(forGrowth: 1000)
-someOtherPupulation += growBy1000()
-currentPopulation
-
-
-
-var someOtherPupulation = 4000000
-let growBy1000 = makeGrowthTracker(forGrowth: 1000)
-someOtherPupulation += growBy1000()
-currentPopulation
