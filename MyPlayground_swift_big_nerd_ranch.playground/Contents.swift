@@ -588,3 +588,31 @@ let growBy1000 = makeGrowthTracker(forGrowth: 1000)
 someOtherPupulation += growBy1000()
 currentPopulation
 
+//closure
+
+let closure = {
+    
+    (value: Int) -> Void in
+    
+    print(value)
+    
+}
+
+closure(20)
+
+print(type(of: closure))
+
+
+
+
+let hello = {
+    
+    () -> Void in
+    
+    print("Hello!")
+    
+}
+
+hello()
+
+print(type(of: hello))
