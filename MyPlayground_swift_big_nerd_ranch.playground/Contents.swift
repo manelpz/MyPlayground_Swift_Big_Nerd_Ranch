@@ -604,15 +604,3 @@ print(type(of: closure))
 
 
 
-
-let hello = {
-    
-    () -> Void in
-    
-    print("Hello!")
-    
-}
-
-hello()
-
-print(type(of: hello))
