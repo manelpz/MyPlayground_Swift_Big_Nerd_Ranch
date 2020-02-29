@@ -615,3 +615,16 @@ var reversedNames = names.sorted(by: backward)
 reversedNames = names.sorted(by: { (s1: String, s2: String) -> Bool in
     return s1 > s2
 })
+
+
+//example closure
+
+let strings = numbers.map { (number) -> String in
+    var number = number
+    var output = ""
+    repeat {
+        output = digitNames[number % 10]! + output
+        number /= 10
+    } while number > 0
+    return output
+}
