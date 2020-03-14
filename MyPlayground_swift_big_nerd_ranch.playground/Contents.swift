@@ -628,3 +628,30 @@ let strings = numbers.map { (number) -> String in
     } while number > 0
     return output
 }
+
+//example closure 2
+
+var arithmeticOperation: (Double, Double) -> Double
+
+arithmeticOperation = {
+    
+    (lNumber: Double, rNumber: Double) -> Double in
+    
+    return lNumber + rNumber
+    
+}
+
+print("5 + 5.2 = \(arithmeticOperation(5, 5.2))")
+
+arithmeticOperation = {
+    
+    (lNumber: Double, rNumber: Double) -> Double in
+    
+    return lNumber * rNumber
+    
+}
+
+print("8 * 16 = \(arithmeticOperation(8, 16))")
+
+//5 + 5.2 = 10.2
+//8 * 16 = 128.0
