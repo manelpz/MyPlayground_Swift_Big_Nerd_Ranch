@@ -629,6 +629,7 @@ let strings = numbers.map { (number) -> String in
     return output
 }
 
+
 //example closure 2
 
 var arithmeticOperation: (Double, Double) -> Double
@@ -655,3 +656,23 @@ print("8 * 16 = \(arithmeticOperation(8, 16))")
 
 //5 + 5.2 = 10.2
 //8 * 16 = 128.0
+=======
+
+
+let closure: (Int) -> Int = {
+    
+    (value: Int) -> Int in
+    
+    return value
+    
+}
+
+print(closure(50))
+>>>>>>> Stashed changes
+
+let greeting:(String, String) -> String = { (time:String, name:String) -> String in
+    return "Good \(time), \(name)!"
+}
+
+let text = greeting("morning", "Arthur")
+print(text)
