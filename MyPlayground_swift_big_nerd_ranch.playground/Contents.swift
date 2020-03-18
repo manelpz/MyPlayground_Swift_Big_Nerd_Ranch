@@ -656,7 +656,7 @@ print("8 * 16 = \(arithmeticOperation(8, 16))")
 
 //5 + 5.2 = 10.2
 //8 * 16 = 128.0
-=======
+
 
 
 let closure: (Int) -> Int = {
@@ -676,3 +676,24 @@ let greeting:(String, String) -> String = { (time:String, name:String) -> String
 
 let text = greeting("morning", "Arthur")
 print(text)
+
+
+//Functions as Return Types
+import Cocoa
+var volunteerCounts = [1,3,40,32,2]
+let voulunteersSorted = volunteerCounts.sort{$0 < $1}
+
+func makeTownGrand() -> (Int, Int) -> Int {
+    func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
+       return toLights + lightsToAdd
+    }
+    return buildRoads
+}
+
+
+
+
+
+
+
+
