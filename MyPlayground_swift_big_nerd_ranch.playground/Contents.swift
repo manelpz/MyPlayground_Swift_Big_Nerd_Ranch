@@ -668,7 +668,6 @@ let closure: (Int) -> Int = {
 }
 
 print(closure(50))
->>>>>>> Stashed changes
 
 let greeting:(String, String) -> String = { (time:String, name:String) -> String in
     return "Good \(time), \(name)!"
