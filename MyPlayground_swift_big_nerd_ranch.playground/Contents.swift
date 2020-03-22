@@ -255,27 +255,29 @@ watchedMovies
 //Getting a Set
 //like dictionary but wihtout key and not repitable
 */
+
+/*
 var groceryBag = Set<String>()
 //or
 var groceryBag2 = Set (["apple", "Orange", "banana"])
 groceryBag.insert("apple")
 groceryBag.insert("Orange")
 groceryBag.insert("banana")
-
+*/
 /*
 for food in groceryBag{
     print(food)
 }*/
 
-groceryBag
+//groceryBag
 //let hasBananas = groceryBag2.contains("babana")
 
 //Unions
-
+/*
 let friendsGroceryBag = Set(["uno","dos", "tres"])
 let commonGroceryBag = groceryBag.union(friendsGroceryBag)
 
-
+*/
 //Intersects
 /*
 let roomatesGroceryBag = Set (["apple","bananas", "Cereal", "Toothpaste"])
@@ -287,13 +289,14 @@ itemsToReturn
 
 */
 //Disjoin
-
+/*
 let yourSeconBag =  Set(["berries","Yogurt"])
 let roomatesSecondBag = Set(["grapes", "honey"])
 let disjoint = yourSeconBag.isDisjoint(with: roomatesSecondBag)
 yourSeconBag
 disjoint
 
+*/
 /*
 //Funtions
 
@@ -529,6 +532,7 @@ print("Knowhere has \(stoplights) stoplights.")
 
 */
 
+/*
 func makeTownGrand(budget: Int, condition: (Int) -> Bool) -> ((Int,Int) -> Int)? {
     if condition(budget){
         func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
@@ -676,19 +680,27 @@ let greeting:(String, String) -> String = { (time:String, name:String) -> String
 let text = greeting("morning", "Arthur")
 print(text)
 
+*/
+
+//retake
 
 //Functions as Return Types
-import Cocoa
-var volunteerCounts = [1,3,40,32,2]
-let voulunteersSorted = volunteerCounts.sort{$0 < $1}
+
+var volunteerCounts = [1,2,40,32,2,53]
+let volunteersSorted = volunteerCounts.sort{$0 < $1}
 
 func makeTownGrand() -> (Int, Int) -> Int {
-    func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
-       return toLights + lightsToAdd
+    func buildRoads(ligthsToAdd: Int, toLights: Int) -> Int {
+        return toLights + ligthsToAdd
     }
     return buildRoads
 }
 
+
+var stoplights = 2
+let townPlan = makeTownGrand()
+stoplights = townPlan(4,stoplights)
+print("knowhere has \(stoplights) stoplights")
 
 
 
