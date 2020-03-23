@@ -710,22 +710,37 @@ var volunteerCounts = [1,2,40,32,2,53]
 let volunteersSorted = volunteerCounts.sort{$0 < $1}
 
 func makeTownGrand(buget: Int, condition: (Int) -> Bool) -> ((Int, Int) -> Int)? {
-    if condition(buget)
-    func buildRoads(ligthsToAdd: Int, toLights: Int) -> Int {
-        return toLights + ligthsToAdd
-    }
-    return buildRoads
-}else {
-    return nil
+
+    if condition(buget){
+        func buildRoads(ligthsToAdd: Int, toLights: Int) -> Int {
+            return toLights + ligthsToAdd
+        }
+            return buildRoads
+    }else {
+        return nil
     }
 }
 func evaluateBudget(budget:Int) -> Bool{
     return budget > 10000
-var stoplights=4
- 
-    if let townPlan = makeTownGrand(buget: 1000, condition: evaluateBudget){
-        stoplights = townPlan(4, stoplights)
-    }
-    print("knowhere has \(stoplights) stoplights")
-    
 }
+
+
+func uno ()->Int?{
+    return nil
+}
+var stoplights: Int=4
+//stoplights = uno()
+
+if let townPlan = makeTownGrand(buget: 1001, condition: evaluateBudget){
+    stoplights = townPlan(4, stoplights)
+    //stoplights = nil **cuando la funcion town no se cumple
+}
+//print (stoplights)
+print("knowhere has \(stoplights) stoplights")
+
+if let newTownPlan = makeTownGrand(buget: 10500, condition: evaluateBudget){
+    stoplights = newTownPlan(4, stoplights)
+}
+print("knowhere has \(stoplights) stoplights")
+    
+
