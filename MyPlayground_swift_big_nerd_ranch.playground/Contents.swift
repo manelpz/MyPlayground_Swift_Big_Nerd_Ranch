@@ -703,7 +703,8 @@ stoplights = townPlan(4,stoplights)
 print("knowhere has \(stoplights) stoplights")
 
 */
-//Functions as Arguments
+
+/*//Functions as Arguments
 
 
 var volunteerCounts = [1,2,40,32,2,53]
@@ -742,5 +743,45 @@ if let newTownPlan = makeTownGrand(buget: 10500, condition: evaluateBudget){
     stoplights = newTownPlan(4, stoplights)
 }
 print("knowhere has \(stoplights) stoplights")
+ 
+*/
+
+
+//close capture values
+
+func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
+    var totalGrowth = 0
     
+    func growthTracker() -> Int {
+        totalGrowth += growth
+        return totalGrowth
+    }
+    return growthTracker
+}
+
+var currentPopulation = 5422
+var growBy500:Int = makeGrowthTracker(forGrowth: 500)()
+growBy500 = makeGrowthTracker(forGrowth: 500)()
+growBy500 = makeGrowthTracker(forGrowth: 500)()
+print("hey")
+print(growBy500)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
