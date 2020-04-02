@@ -764,7 +764,19 @@ var growBy500:Int = makeGrowthTracker(forGrowth: 500)()
 growBy500 = makeGrowthTracker(forGrowth: 500)()
 growBy500 = makeGrowthTracker(forGrowth: 500)()
 print("hey")
-print(growBy500)
+
+//growing population
+growBy500
+growBy500
+growBy500
+
+currentPopulation += growBy500 //currentPopulation is now 7422
+
+
+
+
+
+
 
 
 
