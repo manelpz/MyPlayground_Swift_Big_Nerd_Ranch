@@ -746,7 +746,7 @@ print("knowhere has \(stoplights) stoplights")
  
 */
 
-
+/*
 //close capture values
 
 func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
@@ -759,22 +759,53 @@ func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     return growthTracker
 }
 
-var currentPopulation = 5422
-var growBy500:Int = makeGrowthTracker(forGrowth: 500)()
-growBy500 = makeGrowthTracker(forGrowth: 500)()
-growBy500 = makeGrowthTracker(forGrowth: 500)()
-print("hey")
+var currentPopulation = 542
+var growBy500 = makeGrowthTracker(forGrowth: 500)
+//growBy500 = makeGrowthTracker(forGrowth: 500)()
+//growBy500 = makeGrowthTracker(forGrowth: 500)()
+//print("hey")
 
 //growing population
-growBy500
-growBy500
-growBy500
-
-currentPopulation += growBy500 //currentPopulation is now 7422
+growBy500()
+growBy500()
+growBy500()
 
 
+currentPopulation += growBy500() //currentPopulation is now 7422
+let anotherGrowBy500 = growBy500
+anotherGrowBy500() //totalGrowth now eual to 2500
+
+*/
+
+//map
+/*
+ function que transforma un array, pone nuevos valroes y
+ lo convierte en un nuevo array
+ */
+
+func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
+    var totalGrowth = 0
+    
+    func growthTracker() -> Int {
+        totalGrowth += growth
+        return totalGrowth
+    }
+    return growthTracker
+}
+
+var currentPopulation = 542
+var growBy500 = makeGrowthTracker(forGrowth: 500)
+
+growBy500()
+growBy500()
+growBy500()
 
 
+currentPopulation += growBy500() //currentPopulation is now 7422
+let anotherGrowBy500 = growBy500
+anotherGrowBy500() //totalGrowth now eual to 2500
+
+let precinctPopulations =  [1244,2021,2157]
 
 
 
