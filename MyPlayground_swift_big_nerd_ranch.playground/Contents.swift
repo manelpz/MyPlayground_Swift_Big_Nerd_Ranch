@@ -824,6 +824,16 @@ let bigProjections =  projectedPopulations.filter {
 bigProjections
 
 
+//reduce (_:combine)
+//its job is to reduce the values in the collection to a single value that is returned from the function
+
+
+let totalProjection = projectedPopulations.reduce(0){
+    (accumulatedProjection: Int, precinctProjection: Int) -> Int in
+    return accumulatedProjection + precinctProjection
+}
+totalProjection
+
 
 
 
