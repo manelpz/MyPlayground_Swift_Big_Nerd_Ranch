@@ -782,7 +782,7 @@ anotherGrowBy500() //totalGrowth now eual to 2500
  function que transforma un array, pone nuevos valroes y
  lo convierte en un nuevo array
  */
-
+/*
 func makeGrowthTracker(forGrowth growth: Int) -> () -> Int {
     var totalGrowth = 0
     
@@ -833,6 +833,32 @@ let totalProjection = projectedPopulations.reduce(0){
     return accumulatedProjection + precinctProjection
 }
 totalProjection
+*/
+
+
+//ENUMERATIONS, STRUCTURES AND CLASSES
+
+
+//basic enumerations
+
+
+enum TextAligment{
+    case Left
+    case Right
+    case Center
+}
+
+//creating an instance of TextAlignment
+
+var alignment: TextAligment =  TextAligment.Left
+
+//or i can use:
+
+var alignment2 = TextAligment.Left
+
+// or by inferring the type:
+
+alignment2 = .Right
 
 
 
