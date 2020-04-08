@@ -861,6 +861,27 @@ var alignment2 = TextAligment.Left
 alignment2 = .Right
 
 
+//IF
+
+if .Right == alignment2 {
+    print("we should right-align the text")
+}
+
+//SWITCH
+
+switch alignment {
+case .Left:
+    print("left  aligned")
+case .Right:
+    print("right aligned")
+case .Center:
+    print("center aligned")
+default:
+    print("dafult value")
+}
+
+
+
 
 
 
