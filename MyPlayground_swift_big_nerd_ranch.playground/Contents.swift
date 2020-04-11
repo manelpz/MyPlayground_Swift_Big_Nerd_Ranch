@@ -841,7 +841,7 @@ totalProjection
 
 //basic enumerations
 
-
+/*
 enum TextAligment{
     case Left
     case Right
@@ -878,10 +878,18 @@ case .Center:
     print("center aligned")
 default:
     print("dafult value")
+}*/
+
+//Raw Value Enumerations
+
+enum TextAlignment: Int {
+    case Left //0
+    case Right //1
+    case Center //2
 }
 
-
-
+print("left has raw value \(TextAlignment.Left.rawValue)")
+print("center has raw value \(TextAlignment.Center.rawValue)")
 
 
 
