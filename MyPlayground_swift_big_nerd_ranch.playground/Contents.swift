@@ -881,7 +881,7 @@ default:
 }*/
 
 //Raw Value Enumerations
-
+/*
 enum TextAlignment: Int {
     case Left //0
     case Right //1
@@ -906,9 +906,22 @@ if let myAlignment = TextAlignment(rawValue: myRawValue){
     //conversion failed
     print("\(myRawValue) has no corresponding TextAlignment case")
 }
+*/
 
 
 
+//creating an enum with strings
+
+enum ProgrammingLanguage: String{
+    case swift = "Swift"
+    case ObjectiveC = "Objective C"
+    case C = "C"
+    case Cpp = "C++"
+    case python = "Python"
+}
+
+let myFavoriteLanguage = ProgrammingLanguage.swift
+print("my favorite programming language is \(myFavoriteLanguage.rawValue)")
 
 
 
