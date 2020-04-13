@@ -891,7 +891,21 @@ enum TextAlignment: Int {
 print("left has raw value \(TextAlignment.Left.rawValue)")
 print("center has raw value \(TextAlignment.Center.rawValue)")
 
+//create a raw value
+var myRawValue = 20
 
+//try to convert the raw value into a TextAlignment
+myRawValue = 2
+
+if let myAlignment = TextAlignment(rawValue: myRawValue){
+    
+    //conversion succeeded
+    print("successfully converted \(myRawValue) into a textAlignment")
+
+}else{
+    //conversion failed
+    print("\(myRawValue) has no corresponding TextAlignment case")
+}
 
 
 
