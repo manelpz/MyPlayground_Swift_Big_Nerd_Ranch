@@ -924,7 +924,21 @@ let myFavoriteLanguage = ProgrammingLanguage.swift
 print("my favorite programming language is \(myFavoriteLanguage.rawValue)")
 
 
+//Methods
 
+enum Lightbuilb{
+    case On
+    case Off
+    
+    func surfaceTemperatureForAmbientTemperature(ambient: Double) -> Double {
+        switch self {
+        case .On:
+            return ambient + 150.0
+        case .Off:
+            return ambient
+        }
+    }
+}
 
 
 
