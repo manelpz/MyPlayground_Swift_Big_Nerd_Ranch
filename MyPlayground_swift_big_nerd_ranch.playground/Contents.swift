@@ -799,8 +799,8 @@ var growBy500 = makeGrowthTracker(forGrowth: 500)
 growBy500()
 growBy500()
 growBy500()
-
-
+*/
+/*
 currentPopulation += growBy500() //currentPopulation is now 7422
 let anotherGrowBy500 = growBy500
 anotherGrowBy500() //totalGrowth now eual to 2500
@@ -926,7 +926,7 @@ print("my favorite programming language is \(myFavoriteLanguage.rawValue)")
 
 //Methods
 
-enum Lightbuilb{
+enum Lightbulb{
     case On
     case Off
     
@@ -940,6 +940,13 @@ enum Lightbuilb{
     }
 }
 
+//turning on the light
+
+var bulb = Lightbulb.On
+let ambientTemperature = 77.0
+
+var bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
+print("the bulb´s temperature is \(bulbTemperature)")
 
 
 
