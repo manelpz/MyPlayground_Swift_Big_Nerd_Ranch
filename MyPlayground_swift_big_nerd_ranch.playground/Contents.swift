@@ -949,9 +949,16 @@ var bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambi
 print("the bulb´s temperature is \(bulbTemperature)")
 
 
+//toggle
 
-
-
+func toggle(){
+    switch self {
+        case .On:
+            self = .Off
+        case .Off:
+            self = .On
+    }
+}
 
 
 
