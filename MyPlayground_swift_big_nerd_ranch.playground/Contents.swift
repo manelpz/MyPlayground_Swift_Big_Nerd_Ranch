@@ -951,7 +951,7 @@ print("the bulb´s temperature is \(bulbTemperature)")
 
 //toggle
 
-func toggle(){
+mutating func toggle(){
     switch self {
         case .On:
             self = .Off
@@ -961,7 +961,9 @@ func toggle(){
 }
 
 
-
+bulb.toggle()
+bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
+print("the bulb´s temperature is \(bulbTemperature)")
 
 
 
