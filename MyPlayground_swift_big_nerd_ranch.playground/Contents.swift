@@ -945,25 +945,37 @@ enum Lightbulb{
 var bulb = Lightbulb.On
 let ambientTemperature = 77.0
 
-var bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
-print("the bulb´s temperature is \(bulbTemperature)")
-
-
 //toggle
 
 mutating func toggle(){
     switch self {
-        case .On:
-            self = .Off
-        case .Off:
-            self = .On
+    case .On:
+        self = .Off
+    case .Off:
+        self = .On
     }
 }
 
+var bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
+print("the bulb´s temperature is \(bulbTemperature)")
 
+/*
 bulb.toggle()
 bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
-print("the bulb´s temperature is \(bulbTemperature)")
+print("the bulb´s temperature is \(bulbTemperature)")*/
+
+
+//return to knowhere
+
+func makeTownGrand() -> (Int, Int) -> Int {
+    func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
+        return toLights + lightsToAdd
+    }
+    return buildRoads
+}
+
+
+
 
 
 
