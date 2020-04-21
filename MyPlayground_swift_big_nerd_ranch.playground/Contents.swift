@@ -974,7 +974,12 @@ func makeTownGrand() -> (Int, Int) -> Int {
     return buildRoads
 }
 
+// the roads of nowhere
 
+var stoplights = 4
+let townPlan = makeTownGrand()
+stoplights = townPlan(4, stoplights)
+print("knowhere as \(stoplights) stoplights")
 
 
 
