@@ -911,7 +911,7 @@ if let myAlignment = TextAlignment(rawValue: myRawValue){
 
 
 //creating an enum with strings
-
+/*
 enum ProgrammingLanguage: String{
     case swift = "Swift"
     case ObjectiveC = "Objective C"
@@ -955,10 +955,10 @@ mutating func toggle(){
         self = .On
     }
 }
-
+*//*
 var bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
 print("the bulb´s temperature is \(bulbTemperature)")
-
+*/
 /*
 bulb.toggle()
 bulbTemperature = bulb.surfaceTemperatureForAmbientTemperature(ambient: ambientTemperature)
@@ -966,7 +966,7 @@ print("the bulb´s temperature is \(bulbTemperature)")*/
 
 
 //return to knowhere
-
+/*
 func makeTownGrand() -> (Int, Int) -> Int {
     func buildRoads(lightsToAdd: Int, toLights: Int) -> Int {
         return toLights + lightsToAdd
@@ -980,8 +980,31 @@ var stoplights = 4
 let townPlan = makeTownGrand()
 stoplights = townPlan(4, stoplights)
 print("knowhere as \(stoplights) stoplights")
+*/
 
+//Functions as Arguments
+var volunteerCounts = [1,3,40,32,2,53,77,13]
+var volunteerSorted = volunteerCounts.sort{ $0 < $1}
 
+func makeTownGrand(budget: Int, condition: (Int) -> Bool)->((Int, Int) ->Int)? {
+    if condition(budget){
+        func buildRoads(lightsToAdd: Int, toLight: Int) -> Int {
+            return toLight + lightsToAdd
+        }
+        return buildRoads
+    }else{
+        return nil
+    }
+}
 
+func evaluateBudget(budget: Int) -> Bool{
+    return budget > 1000
+}
 
+var stoplights = 4
+
+if let townPlan = makeTownGrand(budget: 100, condition: evaluateBudget){
+    stoplights = townPlan(4, stoplights)
+}
+print("knowhere has \(stoplights) stoplights")
 
