@@ -996,7 +996,7 @@ func makeTownGrand(budget: Int, condition: (Int) -> Bool)->((Int, Int) ->Int)? {
         return nil
     }
 }
-
+/*
 func evaluateBudget(budget: Int) -> Bool{
     return budget > 1000
 }
@@ -1007,4 +1007,4 @@ if let townPlan = makeTownGrand(budget: 100, condition: evaluateBudget){
     stoplights = townPlan(4, stoplights)
 }
 print("knowhere has \(stoplights) stoplights")
-
+*/
